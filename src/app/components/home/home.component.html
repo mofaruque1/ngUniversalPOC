@@ -1,0 +1,37 @@
+<app-slider></app-slider>
+
+<div class="feedback">
+  <a (click)="showFeedback=!showFeedback">Feedback</a>
+
+  <div *ngIf="showFeedback">
+
+    <object type="text/html" data="https://qtrial2018q2az1.az1.qualtrics.com/jfe/form/SV_bErOrRRR7ME614p" width="450px" height="600px"
+      style="overflow:auto;">
+    </object>
+  </div>
+
+</div>
+
+
+
+<!-- json data -->
+<div class="container">
+    <div class="card" *ngFor="let item of posts | slice:1:10" style="margin:20px 0;">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <div class="card-title">
+          <strong>{{item.title}}</strong>
+        </div>
+        <div class="card-text" style="padding:20px 0;">
+          {{item.body}}
+        </div>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <br>
+      <br>
+    </div>
+</div>
+
+<h2 style="text-align:center;margin:40px"> - - Footer goes here - - </h2>

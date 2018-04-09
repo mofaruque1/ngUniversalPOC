@@ -1,0 +1,26 @@
+
+.feedback{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   
+    /* background-color: aqua;
+    border: 1px solid black; */
+    font-size: 12px;
+    z-index: 22;
+    
+}
+
+.feedback a{
+    cursor: pointer;
+    background-color: rgb(22, 122, 122);
+    padding:10px 20px;
+    display: block;
+    color:white;
+}
+
+.cross{
+    display:inline-block;
+    position: absolute;
+    top:-10px;
+}
