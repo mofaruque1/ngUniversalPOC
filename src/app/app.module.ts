@@ -2,7 +2,7 @@ import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -26,10 +26,12 @@ const appRoutes:Routes=[
     HomeComponent,
     AboutComponent,
     CarouselComponent
+   
   ],
   imports: [
     BrowserModule.withServerTransition({appId : 'demotwo'}),
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [

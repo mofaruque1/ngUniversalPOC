@@ -105,3 +105,16 @@ footer .text-center{
     font-family: Lobster;
     letter-spacing: 1px;
 }
+
+
+.login-div{
+    position: relative;
+}
+
+.login-btn{
+    position: absolute;
+    top:-48px;
+    right: 240px;
+    padding: 5px 20px;
+    z-index: 22;
+}

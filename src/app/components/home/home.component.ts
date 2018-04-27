@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
   showFeedback:boolean;
 
 
-  constructor(private dataservice: DataService, private sanitizer: DomSanitizer) { 
-    this.url = sanitizer.bypassSecurityTrustResourceUrl('https://www.w3schools.com');
+  constructor(private dataservice: DataService) { 
+    
   }
 
   ngOnInit() {

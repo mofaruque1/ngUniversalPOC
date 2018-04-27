@@ -9,9 +9,12 @@ import * as $ from 'jquery';
 })
 export class SliderComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
+
+    if(typeof window !='undefined'){
     $(document).ready(function($){
       var slidesWrapper = $('.cd-hero-slider');
     
@@ -145,5 +148,7 @@ export class SliderComponent implements OnInit {
       };
     });
   }
+  
 
+}
 }
